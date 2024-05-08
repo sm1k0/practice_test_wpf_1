@@ -41,6 +41,7 @@ namespace practice_test_wpf_1
         public DayControlViewModel(DateTime date, string imageSource, string someText)
         {
             Date = date;
+            date.ToString("dd.MM.yyyy");
             ImageSource = imageSource;
             SomeTextProperty = someText;
         }

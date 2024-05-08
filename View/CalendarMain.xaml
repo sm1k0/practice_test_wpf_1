@@ -29,7 +29,7 @@
 
         <Button x:Name="nazad_data" Grid.Row="0" Grid.Column="0" Content="&lt;" Click="nazad_data_Click" Background="#FF9D72DF" FontSize="36" FontFamily="Arial Black" />
         <Label x:Name="MonthLabel" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Background="#FFD2BFE9" FontFamily="Arial Black" />
-        <DatePicker x:Name="MonthSelect" Grid.Column="2" VerticalAlignment="Center"  SelectedDateChanged="MonthSelect_SelectedDateChanged" Width="30" Background="#FF8B28DD"/>
+        <DatePicker x:Name="MonthSelect" Grid.Column="2" VerticalAlignment="Center" SelectedDateChanged="MonthSelect_SelectedDateChanged" Width="30" Background="#FF8B28DD"/>
         <Button x:Name="vpered_data" Grid.Row="0" Grid.Column="3" Content="&gt;" Click="vpered_data_Click" Background="#FF9D72DF" FontFamily="Arial Black" FontSize="36" />
         <ListBox x:Name="chisla_month" Grid.Row="1" Grid.ColumnSpan="4" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="#FF714CA0"
          ItemsSource="{Binding DaysOfMonth}" DisplayMemberPath="Date">

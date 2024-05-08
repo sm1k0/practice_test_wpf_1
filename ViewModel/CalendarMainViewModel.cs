@@ -32,8 +32,8 @@ namespace practice_test_wpf_1
                 OnPropertyChanged(nameof(DaySelect));
             }
         }
-        private ObservableCollection<DayControlViewModel> _daysOfMonth;
-        public ObservableCollection<DayControlViewModel> DaysOfMonth
+        private ObservableCollection<DayControl> _daysOfMonth;
+        public ObservableCollection<DayControl> DaysOfMonth
         {
             get { return _daysOfMonth; }
             set
@@ -57,7 +57,7 @@ namespace practice_test_wpf_1
 
         public void UpdateDaysOfMonth()
         {
-            List<DayControlViewModel> days = new List<DayControlViewModel>();
+            List<DayControl> days = new List<DayControl>();
             int daysInMonth = DateTime.DaysInMonth(SelectedMonth.Year, SelectedMonth.Month);
 
             for (int i = 1; i <= daysInMonth; i++)
@@ -65,11 +65,11 @@ namespace practice_test_wpf_1
                 DateTime date = new DateTime(SelectedMonth.Year, SelectedMonth.Month, i);
                 string dateString = date.ToString("dd.MM.yyyy");
                 DaySelect daySelect = new DaySelect(dateString, new List<Punct>()); 
-                days.Add(new DayControlViewModel(date, "", ""));
+                days.Add(new DayControl(date, "", ""));
 
             }
 
-            DaysOfMonth = new ObservableCollection<DayControlViewModel>(days);
+            DaysOfMonth = new ObservableCollection<DayControl>();
         }
 
 

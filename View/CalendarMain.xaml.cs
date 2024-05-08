@@ -38,7 +38,7 @@ namespace practice_test_wpf_1
             }
             else
             {
-                throw new FormatException("Invalid date format");
+                throw new FormatException();
             }
         }
 
