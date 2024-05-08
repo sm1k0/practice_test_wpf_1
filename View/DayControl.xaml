@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="practice_test_wpf_1.DayControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:practice_test_wpf_1"
+             mc:Ignorable="d" 
+             Height="80" Width="80">
+
+    <Grid Background="#FFD0A2EA" Margin="5,5,5,5">
+        <StackPanel Margin="0,10,0,0" >
+            <Label x:Name="Day" Content="{Binding Date.Day}" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="14" />
+            <Image Source="{Binding ImageSource}" Width="30" Height="30" />
+            <TextBlock Text="{Binding SomeTextProperty}" FontSize="20" Width="26" Margin="8,-55,8,8"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
